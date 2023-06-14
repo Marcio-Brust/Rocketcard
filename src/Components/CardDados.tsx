@@ -14,25 +14,30 @@ export const CardDados = () => {
 
   return (
     <Cdados>
-      <img src={followers} alt="followers" />
+      <img style={{ display: "block" }} src={followers} alt="followers" />
       <InfoDados>
-        <p>{data?.followers} </p> <p>Seguidores</p>
+        <p style={{ fontSize: "0.8rem" }}>{data?.followers} </p>{" "}
+        <p style={{ fontSize: "0.8rem" }}>Seguidores</p>
       </InfoDados>
       <img src={following} alt="following" />
       <InfoDados>
-        <p>{data?.followers}</p> <p>Seguindo</p>
+        <p style={{ fontSize: "0.8rem" }}>{data?.followers}</p>{" "}
+        <p style={{ fontSize: "0.8rem" }}>Seguindo</p>
       </InfoDados>
       <img src={repository} alt="repository" />
       <InfoDados>
-        <p>{data?.public_repos} </p> <p>Repositórios</p>
+        <p style={{ fontSize: "0.8rem" }}>{data?.public_repos} </p>{" "}
+        <p style={{ fontSize: "0.8rem" }}>Repositórios</p>
       </InfoDados>
       <img src={company} alt="company" />
       <InfoDados>
-        <p>{data?.company ? data.company : "Null"}</p>
+        <p style={{ fontSize: "0.8rem" }}>
+          {data?.company ? data.company : "-"}
+        </p>
       </InfoDados>
       <img src={location} alt="location" />
       <InfoDados>
-        <p>{data?.location}</p>
+        <p style={{ fontSize: "0.8rem" }}>{data?.location}</p>
       </InfoDados>
     </Cdados>
   );
