@@ -1,24 +1,29 @@
-import { useState } from "react";
-import { Card } from "./Components/Card";
-import { CardDivShadow } from "./Components/Card.style";
+import { Card } from "./Components//Card/Card";
+import { Button } from "./Components/Button/Button";
+import { CardDivShadow } from "./Components/Card/Card.style";
 
 function App() {
   return (
     <section
       style={{
-        background: "#000000",
-        width: "100%",
-        height: "100vh",
-        color: "##f1f1f1",
         display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "space-evenly",
+        boxSizing: "border-box",
+        marginTop: "50px",
       }}
     >
       <CardDivShadow>
         {" "}
         <Card />
       </CardDivShadow>
+      <div
+        style={{
+          display: "grid",
+          alignItems: "center",
+        }}
+      >
+        <Button />
+      </div>
     </section>
   );
 }

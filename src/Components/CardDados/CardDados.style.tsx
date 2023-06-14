@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Cdados = styled.div`
   width: 160px;
-  height: 210px;
+  height: 200px;
   background: rgba(20, 18, 18, 0.35);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(13.5px);
@@ -24,4 +24,13 @@ export const InfoDados = styled.div`
   display: flex;
   height: 40px;
   gap: 20px;
+`;
+
+export const P = styled.p`
+  display: block;
+  font-size: 0.8rem;
+`;
+
+export const Img = styled.img`
+  display: block;
 `;

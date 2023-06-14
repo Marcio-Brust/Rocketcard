@@ -1,6 +1,7 @@
-import { useFetch } from "../Hooks/useFetch";
-import { HeaderCd } from "./HeaderCard.style";
-import logo from "../assets/logo.svg";
+import { useFetch } from "../../Hooks/useFetch";
+import { HeaderCd } from "../HeaderCard/HeaderCard.style";
+import logo from "../../assets/logo.svg";
+import { Img } from "../CardDados/CardDados.style";
 
 export const HeaderCard = () => {
   const api = "https://api.github.com/users/Marcio-Brust";
@@ -9,14 +10,14 @@ export const HeaderCard = () => {
 
   return (
     <HeaderCd>
-      <img
+      <Img
         style={{
           boxSizing: "border-box",
           width: "40px",
-          height: "40px",
-          border: "solid 1px #f1f1f1",
-          borderRadius: "50%",
-          padding: "10px",
+          height: "35px",
+          border: "solid 1.5px #f1f1f1",
+          borderRadius: "100%",
+          padding: "5px",
         }}
         src={logo}
         alt="logo"
