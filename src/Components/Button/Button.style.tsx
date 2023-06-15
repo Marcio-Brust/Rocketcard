@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { CardDivShadow } from "../Card/Card.style";
 
 export const ButtonCard = styled.button`
   height: 40px;
@@ -9,4 +10,12 @@ export const ButtonCard = styled.button`
   color: #fff;
   font-weight: 700;
   cursor: pointer;
+
+  &:hover {
+    background: red;
+
+    ${CardDivShadow} {
+      background: red;
+    }
+  }
 `;

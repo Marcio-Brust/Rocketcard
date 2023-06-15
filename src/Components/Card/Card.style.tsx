@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ButtonCard } from "../Button/Button.style";
 
 export const CardDiv = styled.div`
   background: #0e1218;
