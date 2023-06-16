@@ -1,7 +1,6 @@
 import { Card } from "./Components//Card/Card";
 import { Button } from "./Components/Button/Button";
 import { CardDivShadow } from "./Components/Card/Card.style";
-import { useEffect, useState } from "react";
 
 function App() {
   return (

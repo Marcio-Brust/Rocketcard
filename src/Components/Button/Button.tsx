@@ -1,20 +1,25 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ButtonCard } from "./Button.style";
+import { colors } from "../Colors/Colors";
 
 export const Button = () => {
-  const [color, setColor] = useState<number>();
+  const [color, setColor] = useState<string>("");
+  const [cont, setCont] = useState(0);
+  if (cont > 53) setCont(0);
 
-useEffect(()=>{
-
-},[])
   const handleColor = () => {
-    const cor = Math.floor(Math.random() * 999);
-    setColor(cor);
+    setCont(cont + 1);
+    const colorsFilter = colors
+      .filter((item, index) => index === cont)
+      .toString();
+    setColor(colorsFilter);
   };
 
   return (
     <>
-      <ButtonCard onClick={handleColor}>Gerar backgound</ButtonCard>
+      <ButtonCard color={color} onClick={handleColor}>
+        Gerar backgound
+      </ButtonCard>
     </>
   );
 };

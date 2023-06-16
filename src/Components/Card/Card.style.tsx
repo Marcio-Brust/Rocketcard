@@ -9,7 +9,7 @@ export const CardDiv = styled.div`
 `;
 
 export const CardDivShadow = styled(CardDiv)`
-  background: rgb(000, 000, 000);
+  background: #222;
   border: solid 1px #f1f1f1;
   height: 650px;
   width: 350px;
