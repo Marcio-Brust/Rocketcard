@@ -1,31 +1,7 @@
-import { Card } from "./Components//Card/Card";
-import { Button } from "./Components/Button/Button";
-import { CardDivShadow } from "./Components/Card/Card.style";
+import { BodyApp } from "./Components/BodyApp/BodyApp";
 
 function App() {
-  return (
-    <section
-      style={{
-        display: "flex",
-        justifyContent: "space-evenly",
-        boxSizing: "border-box",
-        marginTop: "50px",
-      }}
-    >
-      <CardDivShadow>
-        {" "}
-        <Card />
-      </CardDivShadow>
-      <div
-        style={{
-          display: "grid",
-          alignItems: "center",
-        }}
-      >
-        <Button />
-      </div>
-    </section>
-  );
+  return <BodyApp />;
 }
 
 export default App;

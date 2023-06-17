@@ -5,7 +5,7 @@ export const ButtonCard = styled.button`
   width: 250px;
   border-radius: 10px;
   border-bottom: #1a1a1a;
-  background: ${({ color }) => (color ? color : "#222")};
+  background: #0e1218;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
