@@ -1,4 +1,3 @@
-import React from "react";
 import { FooterCard } from "./Footer.style";
 import logo from "../../assets/logo.svg";
 import { Img } from "../CardDados/CardDados.style";

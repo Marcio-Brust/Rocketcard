@@ -15,7 +15,7 @@ export const Button = () => {
   const handleColor = () => {
     setCont(cont + 1);
     const colorsFilter = colors
-      .filter((item, index) => index === cont)
+      .filter((_item, index) => index === cont)
       .toString();
     setColor(colorsFilter);
   };
