@@ -1,9 +1,13 @@
 import { ReactNode, createContext, useState } from "react";
 import { colors } from "../Components/Colors/Colors";
 
+type ColorContextTypes = {
+  color: string;
+  handleColor: (newState: string) => void;
+};
+
 const InitialValue = {
   color: "#000",
-
   handleColor: () => {
     ("");
   },
@@ -13,10 +17,10 @@ interface ChildProps {
   children: ReactNode;
 }
 
-export const ColorContext = createContext(InitialValue);
+export const ColorContext = createContext<ColorContextTypes>(InitialValue);
 
 export function ColorContextProvider({ children }: ChildProps) {
-  const [color, setColor] = useState<string>("");
+  const [color, setColor] = useState(InitialValue.color);
   const [cont, setCont] = useState(0);
   if (cont > 53) setCont(0);
 
