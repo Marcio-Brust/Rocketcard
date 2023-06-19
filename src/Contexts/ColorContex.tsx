@@ -11,6 +11,7 @@ const InitialValue = {
   handleColor: () => {
     ("");
   },
+  cont: 0,
 };
 
 interface ChildProps {
@@ -21,15 +22,13 @@ export const ColorContext = createContext<ColorContextTypes>(InitialValue);
 
 export function ColorContextProvider({ children }: ChildProps) {
   const [color, setColor] = useState(InitialValue.color);
-  const [cont, setCont] = useState(0);
-  if (cont > 53) setCont(0);
+  const [cont, setCont] = useState(InitialValue.cont);
+  if (cont > 53) setCont(InitialValue.cont);
 
   const handleColor = () => {
     setCont(cont + 1);
-    const colorsFilter = colors
-      .filter((_item, index) => index === cont)
-      .toString();
-    setColor(colorsFilter);
+
+    setColor(colors.filter((_item, index) => index === cont).toString());
   };
 
   return (
